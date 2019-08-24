@@ -70,4 +70,13 @@ mainP[1].textContent = siteContent['main-content']['about-content']
 mainP[2].textContent = siteContent['main-content']['services-content']
 mainP[3].textContent = siteContent['main-content']['product-content']
 mainP[4].textContent = siteContent['main-content']['vision-content']
+
 document.getElementById('middle-img').setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+// contact
+document.querySelector('.contact h4').textContent = siteContent['contact']['contact-h4'];
+let contactP = document.querySelectorAll('.contact p');
+contactP[0].textContent = siteContent['contact']['address'];
+contactP[1].textContent = siteContent['contact']['phone'];
+contactP[2].textContent = siteContent['contact']['email'];
+
