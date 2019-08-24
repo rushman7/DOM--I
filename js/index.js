@@ -56,7 +56,18 @@ document.getElementById("cta-img").setAttribute('src', siteContent["cta"]["img-s
 document.querySelector('.cta-text h1').textContent = siteContent["cta"]["h1"];
 document.querySelector('.cta-text button').textContent = siteContent["cta"]["button"];
 
-// cta[2].textContent = siteContent["cta"]["h1"]
-
 // main-content
+let mainH4 = document.querySelectorAll('.main-content h4');
+mainH4[0].textContent = siteContent['main-content']['features-h4']
+mainH4[1].textContent = siteContent['main-content']['about-h4']
+mainH4[2].textContent = siteContent['main-content']['services-h4']
+mainH4[3].textContent = siteContent['main-content']['product-h4']
+mainH4[4].textContent = siteContent['main-content']['vision-h4']
+
+let mainP = document.querySelectorAll('.main-content p');
+mainP[0].textContent = siteContent['main-content']['features-content']
+mainP[1].textContent = siteContent['main-content']['about-content']
+mainP[2].textContent = siteContent['main-content']['services-content']
+mainP[3].textContent = siteContent['main-content']['product-content']
+mainP[4].textContent = siteContent['main-content']['vision-content']
 document.getElementById('middle-img').setAttribute('src', siteContent['main-content']['middle-img-src']);
