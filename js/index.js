@@ -53,7 +53,10 @@ document.getElementById("logo-img").setAttribute('src', siteContent["nav"]["img-
 
 // cta
 document.getElementById("cta-img").setAttribute('src', siteContent["cta"]["img-src"]);
+document.querySelector('.cta-text h1').textContent = siteContent["cta"]["h1"];
+document.querySelector('.cta-text button').textContent = siteContent["cta"]["button"];
 
+// cta[2].textContent = siteContent["cta"]["h1"]
 
 // main-content
 document.getElementById('middle-img').setAttribute('src', siteContent['main-content']['middle-img-src']);
