@@ -40,7 +40,7 @@ const siteContent = {
 // Example: Update the img src for the logo
 
 // Nav
-let navA = document.querySelectorAll('nav a');
+const navA = document.querySelectorAll('nav a');
 
 navA[0].textContent = siteContent["nav"]["nav-item-1"]; 
 navA[1].textContent = siteContent["nav"]["nav-item-2"]; 
@@ -48,6 +48,21 @@ navA[2].textContent = siteContent["nav"]["nav-item-3"];
 navA[3].textContent = siteContent["nav"]["nav-item-4"]; 
 navA[4].textContent = siteContent["nav"]["nav-item-5"]; 
 navA[5].textContent = siteContent["nav"]["nav-item-6"]; 
+
+const navNewA = document.querySelector('nav a');
+const newNav1 = document.createElement('a');
+newNav1.textContent = 'Careers';
+newNav1.style.color = 'green';
+navNewA.appendChild(newNav1);
+
+const newNav2 = document.createElement('a');
+newNav2.textContent = 'React';
+newNav2.style.color = 'green';
+navNewA.appendChild(newNav2);
+
+for (let i = 0;i < navA.length;i++) {
+  navA[i].style.color = "green"
+}
 
 document.getElementById("logo-img").setAttribute('src', siteContent["nav"]["img-src"]);
 
@@ -57,14 +72,14 @@ document.querySelector('.cta-text h1').textContent = siteContent["cta"]["h1"];
 document.querySelector('.cta-text button').textContent = siteContent["cta"]["button"];
 
 // main-content
-let mainH4 = document.querySelectorAll('.main-content h4');
+const mainH4 = document.querySelectorAll('.main-content h4');
 mainH4[0].textContent = siteContent['main-content']['features-h4']
 mainH4[1].textContent = siteContent['main-content']['about-h4']
 mainH4[2].textContent = siteContent['main-content']['services-h4']
 mainH4[3].textContent = siteContent['main-content']['product-h4']
 mainH4[4].textContent = siteContent['main-content']['vision-h4']
 
-let mainP = document.querySelectorAll('.main-content p');
+const mainP = document.querySelectorAll('.main-content p');
 mainP[0].textContent = siteContent['main-content']['features-content']
 mainP[1].textContent = siteContent['main-content']['about-content']
 mainP[2].textContent = siteContent['main-content']['services-content']
@@ -75,7 +90,7 @@ document.getElementById('middle-img').setAttribute('src', siteContent['main-cont
 
 // contact
 document.querySelector('.contact h4').textContent = siteContent['contact']['contact-h4'];
-let contactP = document.querySelectorAll('.contact p');
+const contactP = document.querySelectorAll('.contact p');
 contactP[0].textContent = siteContent['contact']['address'];
 contactP[1].textContent = siteContent['contact']['phone'];
 contactP[2].textContent = siteContent['contact']['email'];
